@@ -1,0 +1,757 @@
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+ul{
+    padding: 0px!important;
+}
+.menubar{
+    background-color: black;
+    height: 70px;
+}
+main{
+    margin: 0 auto;
+    width: 980px;
+    position: relative;
+}
+.logo{
+    float: left;
+    padding: 0px;
+    width: 50%;
+}
+.social-media ul li {
+    margin-left: 20px;
+    display: inline-block;
+    list-style: none;
+}
+.social-media{
+    width: 30%;
+    float: right;
+    margin-bottom: 20px;
+}
+.seccolumn .urls.header2{
+    background-color: #ffffff;
+    width: 980px;
+    margin: 0 auto;
+    padding: 16px;
+}
+.urls{
+    height: 100px;
+    border-bottom: 3px solid #efefef;
+}
+.header2 ul li{
+    display: inline-block;
+    color: #646464;
+    margin-left: 50px;
+    height: 50px;
+}
+.header2 ul li .search{
+    display: inline-block;
+    color: #646464;
+    margin-left: 225px;
+    height: 50px;
+}
+.header2 ul li :hover{
+    color: #00bac6;
+    border-bottom: 3px solid #00bac6;
+}
+.header2 ul li a{
+    color: #646464;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    float: left;   
+}
+.header2{
+    width: 100%;
+    float: left;
+}
+.search{
+    text-align: center;
+    float: right;
+
+}
+.search input{
+    background-image: url('../IMG/search.png');
+    background-repeat: no-repeat;
+    background-position: 95%;
+    height: 30px;
+    padding: 18px;
+    width: 190px;
+    margin-top: 10px;
+    border: 1px solid #9b9999;
+}
+.seccolumn .urls{
+    width: 100%;
+    float: left;
+    position: relative;
+}
+.seccolumn .shoppingbag{
+    float: right;
+    width: 70px;
+}
+a{
+    text-emphasis: none;
+}
+p{
+    font-family: 'Audiowide', sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    margin: 28px 0;
+    color: #646464;
+}
+h1{
+    font-weight: 700;
+    color: #ffffff;
+}
+h2{
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0;
+}
+h3{
+    font-weight: 500;
+    color: #ffffff;
+    text-align: center;
+}
+h5{
+    font-weight: 200;
+    color: black;
+}
+h4{
+    font-size: 30px;
+    text-align: center;
+    font-family:cursive;
+    width: 100%;
+    font-style: italic;
+    font-weight: bold;
+    color: yellow;
+    padding: 0;
+    margin-top: 1px;
+    margin-bottom: 50px;
+}
+h6{
+    font-style: normal;
+    font-weight: bold;
+    font-family: "Audiowide", sans-serif;
+    color: black;
+}
+/* h6{
+    font-size: 20px;
+    text-align: center;
+    font-family:cursive;
+    width: 100%;
+    font-style: italic;
+    font-weight: 500;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 40px;
+} */
+
+/*--------------
+buttons
+--------------*/
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: transparent;
+    border-radius: 30px;
+    text-transform: capitalize;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: inherit;
+    color: rgb(240, 169, 38);
+    line-height: 1,5;
+    user-select: none;
+    border: none;
+    width: 70px;
+}
+
+.btn-default{
+    border: 2px solid rgb(235, 192, 112);
+}
+.btn-default:hover{
+    color: #ffffff;
+    background-color: orange;
+}
+
+button.slick-prev {
+    font-size: 0px;
+    border: none;
+    width: 25px;
+    height: 51px;
+    z-index: 9;
+    background-color: transparent;
+    position: absolute;
+    background-image: url('../IMG/previous.png');
+    top: 35%;
+    left: 10%;
+}
+button.slick-next {
+    font-size: 0px;
+    border: none;
+    width: 25px;
+    height: 51px;
+    z-index: 9;
+    background-color: transparent;
+    position: absolute;
+    background-image: url('../IMG/next.png');
+    top: 35%;
+    right: 10%;
+}
+
+/*--------------------
+animation
+-------------------*/
+@keyframes zoomInOut{
+    0%,100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+}
+
+
+.options {
+    width: 100%!important;   
+}
+.options img{
+    max-height: 350px;
+
+}
+.slick.list{
+    width: 100%!important;
+}
+.slick-initialized{
+    overflow: hidden;
+   
+}
+.slick-dots li button{
+    font-size: 0px;
+    border: 5px solid #ffffff;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer; 
+}
+li.slick-active button{
+    background: #00bac6;
+}
+.slick-dots{
+    margin: 0 auto;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 290px
+}
+.slick-dots li {
+    padding-left: 15px;
+    display: inline-block;
+}
+
+.row{
+    display: inline;
+    position: relative;
+    overflow: hidden;
+}
+.min-vh-100{
+    min-height: 100vh;
+}
+/*--------------------
+Menu-section
+ Japan Restaurant
+-------------------*/
+.menu-section{
+    position: relative;
+    overflow: hidden;
+}
+.menu-section::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #7a7979;
+    opacity: 0.7;
+    z-index: -1;
+}
+.menu-bg{
+    animation: zoomInOut 20s ease infinite;
+}
+.menu-section .menu-bg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('../IMG/foodmenu.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    z-index: -2;
+}
+.menu-bg{
+    position: fixed;
+}
+.menu-section .min-vh-100{
+    padding: 100px 0;
+}
+.home-text{
+    padding: 100px 50px;
+    max-width: 700px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.home-text h1{
+    font-family: var(--cursive-font);
+    font-size: 60px;
+    line-height: 75px;
+    margin: 0 0 5px;
+}
+.home-text p{
+    margin: 0 0 30px;
+}
+.menucarte{
+    background-color: rgb(247, 231, 229);
+    padding-bottom: 60px;
+}
+.menucarte .title2{
+    margin-bottom: 40px;
+}
+.title2{
+    background-color: rgb(245, 99, 99);
+    width: 100%;
+    padding: 0 15px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.title2 h4{
+    font-size: 35px;
+    text-transform: capitalize;
+}
+.title2 h4::before{
+    content: attr();
+    display: block;
+    font-size: 24px;
+    color: #ffffff;
+    font-family: var(--cursive-font);
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.menu-options{
+    padding: 0 15px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.menu-option-item{
+    font-size: 18px;
+    font-family: inherit;
+    text-transform: capitalize;
+    border: none;
+    background-color: transparent;
+    font-weight: 500;
+    color: #646464;
+    cursor: pointer;
+    margin: 0 10px 10px;
+    transition: color 0.3s ease;
+    display:inline-block;
+}
+.menu-option-item.select-btn{
+    color: #ffffff;
+}
+.menu-option-item.select-btn{
+color: salmon;
+}
+.menu-content{
+    display: none;
+}
+.menu-content.select-btn{
+    display: flex;
+    display:grid;
+}
+.menu-item{
+    width: 65%;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin: auto;
+}
+.menu-item .menu-item-price{
+    text-align: center;
+    width: 20%;
+}
+.menu-item-title .add-item{ 
+    text-align: right; 
+    width: 10%; 
+    color:  salmon;
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: transparent;
+    border-radius: 30px;
+    text-transform: capitalize;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: inherit;
+    line-height: 1,5;
+    user-select: none;
+    border: none;
+}
+
+.menu-item::after(){
+    content: '';
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    bottom: 0;
+    border-bottom : 2px dashed salmon;
+}
+.menu-item:nth-last-of-type(2)::after{
+    border: none;
+}
+.menu-item:nth-last-of-type(1)::after{
+    border: none;
+}
+.menu-item-title{
+    display: contents;
+    align-items: center;
+    max-width: 100%;
+}
+.menu-item-title h5{
+    font-size: 16px;
+    text-transform: capitalize;
+    transition: color 0.3s ease;
+}
+.menu-item:hover .menu-item-title h5{
+    color: salmon;
+}
+.menu-item-title img{
+    max-width: 100px;
+    margin-right: 40px;
+}
+.menu-item-price{
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    transition: color 0.3s ease;
+}
+.menu-item:hover .menu-item-price{
+    color: salmon;
+}
+/*--------------------
+Title
+ Japan Restaurant
+-------------------*/
+.title{
+    background-color: rgb(245, 99, 99);
+    width: 100%;
+    padding: 0 15px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.title h2{
+    font-size: 35px;
+    text-transform: capitalize;
+}
+.title h2::before{
+    content: attr();
+    display: block;
+    font-size: 24px;
+    color: var(--main-color);
+    font-family: var(--cursive-font);
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+/*--------------------
+page 2
+About Japan Restaurant
+-------------------*/
+.about{
+    background-color: #ffffff;
+}
+.about-text{
+    width: 40%;
+    float: left;
+    background-color: rgb(245, 99, 99);
+    opacity: 0.8;
+}
+.about-img{
+    width: 50%;
+    float: right;
+    padding: 0 15px;
+    animation: zoomInOut 20s ease infinite;
+}
+.about-text h3{
+    font-size: 30px;
+    text-transform: capitalize;
+    margin: 0 0 15px;
+}
+.about-text p{
+    margin: 0 0 15px;
+}
+.about-text .btn{
+    margin: 15px;
+}
+.about-img img{
+    width: 100%;
+    border-radius: 10px;    
+}
+.about-img .sushiplatter{
+    position: relative;
+}
+.about-img .sushiplatter h3{
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    width: 100%;
+    max-width: 250px;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    font-family: var(--cursive-font);
+    color:#ffffff;
+    opacity: 0.6;
+    font-weight: bold;
+}
+/*-------------
+Clients
+---------------*/
+.rest-client{
+    background-color: rgb(245, 99, 99);
+}
+#results{
+    display:inline-flex;
+    text-align: center;
+    align-items: center;
+    margin-left: 80px;
+    margin-right: 15px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-family: 'Audiowise';
+    font-size: xx-large;
+}
+/*-------------
+Bill
+---------------*/
+.bill-item{
+    max-width: 780px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 100px;
+}
+.bill-header{
+    width: 100%;
+    max-width: 780px;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 auto;
+}
+.bill-food{
+    width: 45%;
+    border-bottom: 4px solid #646464;
+    display: flex;
+    align-items: center;
+}
+.price{
+    width: 15%;
+    border-bottom: 4px solid #646464;
+    display: flex;
+    align-items: center;
+}
+.quantity{
+    width: 30%;
+    border-bottom: 4px solid #646464;
+    display: flex;
+    align-items: center;
+}
+.total{
+    width: 15%;
+    border-bottom: 4px solid #646464;
+    display: flex;
+    align-items: center;
+}
+.total-bill{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+/*--------------------
+Login
+-------------------*/
+/* *{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.login-section{
+    font-family: "Audiowide", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+.login-section{
+    opacity: 0.7;
+}
+a{
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 15px 0;
+}
+span{
+    font-size: 14px;
+    font-weight: 700;
+    color: #52565c;
+    text-transform: uppercase;
+}
+.loginUP{
+    position: absolute;
+    text-align: center;
+    top: 800px;
+    height: 50%;
+    width: 50%;
+    transition: all 0.6s ease-in-out;
+}
+.loginIN{
+    position: absolute;
+    text-align: center;
+    top: 800px;
+    height: 50%;
+    width: 50%;
+    transition: all 0.6s ease-in-out;
+}
+.loginUP form{
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.loginUP input{
+    display: flex;
+    width: 75%;
+    margin-top: 5px;
+    border: none;
+    outline: none;
+    background: none;
+    padding-bottom: 5px;
+    border-bottom: 1px solid salmon ;
+    text-align: center;
+}
+.loginIN form{
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.loginIN input{
+    display: flex;
+    width: 20%;
+    margin-top: 5px;
+    border: none;
+    outline: none;
+    background: none;
+    padding-bottom: 5px;
+    border-bottom: 1px solid salmon ;
+    text-align: center;
+}
+button1{
+    border-radius: 20px;
+    border: 1px solid salmon;
+    background: salmon;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in-out;
+}
+button1:active, :focus{
+    transform: scale(0.95);
+    outline: none;
+}
+.loginIN.signin{
+    width: 140%;
+    opacity: 1;
+}
+.loginUP.signup{
+   width: 50%;
+   opacity: 1;
+   z-index: 2;
+} */
+/*--------------------
+Login
+-------------------*/
+/*------Requirement----*/
+.form-container {
+  width: 400px;
+  margin: auto;
+  box-shadow: 4px 10px 20px rgb(85, 77, 77);
+  margin-top: 40px;
+  text-align: center;
+  background-color: rgb(247, 215, 212);
+  opacity: 0.5;
+}
+.form-container h6 {
+  text-align: center;
+  size: 50px;
+}
+.password-requirements {
+  width: 350px;
+  margin: auto;
+  margin-top: 20px;
+  text-align: center;
+}
+.fulfilled-symbol {
+  display: inline;
+}
+.fulfilled-symbol:after {
+  content: 'X';
+}
+.requirement {
+  color: red;
+  font-size: 14px;
+  font-weight: 600;
+}
+.fulfilled {
+  color: green;
+}
+.fulfilled .fulfilled-symbol:after {
+  content: '\2802';
+}
+#submitBtn:disabled {
+  cursor: not-allowed;
+}
+
+/*--------------------
+Login
+-------------------*/

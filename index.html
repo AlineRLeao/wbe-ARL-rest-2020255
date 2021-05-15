@@ -1,0 +1,379 @@
+<html>
+<head>
+
+    <link rel="stylesheet" type="text/css" href="./CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+    
+    
+
+    <title>My Restaurant page</title>
+</head>
+<body>
+    <header class="menubar">
+        <main>
+          <div class="header1">
+            <div class="logo">
+               <img src="./IMG/japanflag.jpg" width="140px" height="70px" />
+            </div>
+            <div class="social-media">
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/">
+                            <img src="./IMG/linkedin.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/">
+                            <img src="./IMG/face.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/">
+                            <img src="./IMG/tw.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./IMG/notification-message-im.svg">
+                        </a>
+                    </li>
+                </ul>
+
+             </div>
+          </div>
+        </main>
+    </header>
+    <main class="seccolumn urls"> 
+        <div class="header2">
+            <ul>
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a href="">Menu</a>
+                </li>
+                <li>
+                    <a href="./page2.html">About Us</a>
+                </li>
+                <li>
+                    <div class="search">
+                        <input placeholder="Search" type="text"/>
+                    </div>
+                </li>
+                <li class="shoppingbag">
+                    <a href="shoppingbag.html">
+                    <img src="./IMG/emblem-nowrite.svg" ><span>0</span>
+                </a>
+                </li>
+            </ul>
+        </div> 
+        <!-- <div class="search">
+            <input placeholder="Search" type="text"/>
+        </div> -->
+    </main>   
+    <div class="column">
+        <div class="options">
+                <img  src="./IMG/restdinner.jpg" > 
+                <img  src="./IMG/sushi.jpg" >
+                <img  src="./IMG/sushi2.png" >
+          </div>
+    </div>
+
+    <section class="login-section" id="login-section">
+        <div class="form-container">
+            <h6>Staff Sign Up</h6>
+        <div class="password-requirements">
+            <h7 class="requirements-header">Password Requirements:</h7>
+            <div id="number" class="requirement">
+              <div class="fulfilled-symbol"></div>
+              Contains at least 1 number
+            </div>
+            <div id="length" class="requirement">
+              <div class="fulfilled-symbol"></div>
+              Contains at least 8 characters
+            </div>
+            <div id="lowercase" class="requirement">
+              <div class="fulfilled-symbol"></div>
+              Contains at least 1 lower case letter
+            </div>
+            <div id="UPPERCase" class="requirement">
+              <div class="fulfilled-symbol"></div>
+              Contains at least 1 upper case letter
+            </div>
+            <div id="specialCharacter" class="requirement">
+              <div class="fulfilled-symbol"></div>
+              Contains at least 1 of the following characters: @, #, $, %, ^, &, *
+            </div>
+            <div id="passwordsMatch" class="requirement">
+              <div class="fulfilled-symbol"></div>
+              Passwords must match
+            </div>
+          </div>
+          <form class="text-center border border-light p-5" onsubmit="event.preventDefault(); console.log('SUCCESS!')">
+            <input required type="email" id="username" class="form-control mb-4" placeholder="Email">
+            <input required type="password" id="password" class="form-control mb-4 listener" placeholder="Password">
+            <input required type="password" id="confirmPassword" class="form-control mb-4 listener" placeholder="Confirm Password">
+            <button disabled class="btn btn-info btn-block my-4" id="submitBtn" type="submit">Sign In</button>
+          </form>
+    
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <section class="menucarte menu-pad">
+        <div class="container">
+            <div class="row">
+                <div class="title2">
+                    <h4 data-title="order now"> Menu</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="menu-options">
+                    <button type="button" class="menu-option-item select-btn" data-target="#starters"> Starters </button>
+                    <button type="button" class="menu-option-item " data-target="#maincourse"> Main Course </button>
+                    <button type="button" class="menu-option-item " data-target="#vegetarian"> Vegetarian </button>
+                    <button type="button" class="menu-option-item " data-target="#dessert"> Desserts </button>
+                    <button type="button" class="menu-option-item " data-target="#drinks"> Drinks </button>
+                </div>
+            
+            <div class="row menu-content select-btn" id="starters">
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="./IMG/Takoyaki.jpg" alt="menu item thumbnail" >
+                        <h5 class="name">Takoyaki:
+                            Japanese octopus snack made of 
+                            wheat flour.
+                        </h5>
+                        <div class="menu-item-price">
+                            10.00€
+                        </div>
+                        <a class="btn add-item" href="#"> Add Item </a>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="./IMG/agedashi.jpg" alt="menu item thumbnail" >
+                        <h5 class="name"> Agedashi:
+                            Japanese way to serve hot tofu.
+                        </h5>
+                        <div class="menu-item-price">
+                            9.00€
+                        </div>
+                        <a class="btn add-item" href="#"> Add Item </a>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="./IMG/gyoza.jpg" alt="menu item thumbnail">
+                        <h5 class="name">Gyoza:
+                            pan-fried pork dumplings
+                        </h5>
+                        <div class="menu-item-price">
+                            11.00€
+                        </div>
+                        <a class="btn add-item" href="#"> Add Item </a></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row menu-content" id="maincourse">
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="./IMG/lamen.jpg" alt="menu item thumbnail" >
+                        <h5 class="name">Lamen:
+                            beef, pork or
+                            prawns.
+                        </h5>
+                        <div class="menu-item-price">
+                        13.00€
+                        </div>
+                        <a class="btn add-item" href="#"> Add Item </a></a>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="./IMG/scallops.jpg" alt="menu item thumbnail">
+                        <h5 class="name">Scallops:
+                            perfect pan-fried.
+                        </h5>
+                        <div class="menu-item-price">
+                            20.00€
+                        </div>
+                        <a class="btn add-item" href="#"> Add Item </a></a>
+                    </div>
+                 </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="./IMG/mixed-sushi.jpg" alt="menu item thumbnail" >
+                        <h5 class="name">Sushi:
+                            a mixed sushi select by the chef.
+                        </h5>
+                        <div class="menu-item-price">
+                            25.00€
+                        </div>
+                        <a class="btn add-item" href="#"> Add Item </a></a>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="./IMG/sushi.jpg" alt="menu item thumbnail" >
+                        <h5 class="name">Nigiri:
+                            a mixed niguiri select by the chef.
+                        </h5>
+                        <div class="menu-item-price">
+                           30.00€
+                        </div>
+                        <a class="btn add-item" href="#"> Add Item </a>
+                        </div>
+                </div>
+            </div>
+            <div class="row menu-content" id="vegetarian">
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="./IMG/mochi.jpg" alt="menu item thumbnail" >
+                        <h5 class="name">Mochi:
+                            cute round buns made of soft and chewy rice.
+                        </h5>
+                        <div class="menu-item-price">
+                            7.00€
+                        </div>
+                        <a class="btn add-item" href="#"> Add Item </a></a>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="./IMG/mame.jpg" alt="menu item thumbnail" >
+                        <h5 class="name">Kuro Mame:
+                            beans that are simmered in sugar and soy sauce.
+                        </h5>
+                         <div class="menu-item-price">
+                            7.00€
+                        </div>
+                        <a class="btn add-item" href="#"> Add Item </a>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="./IMG/tofusoup.jpg" alt="menu item thumbnail" >
+                        <h5 class="name">Soup:
+                            Tofu-Soup.
+                        </h5>
+                        <div class="menu-item-price">
+                            7.00€
+                        </div>
+                        <a class="btn add-item" href="#"> Add Item </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row menu-content" id="dessert">
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="./IMG/greentea-icecream.jpg" alt="menu item thumbnail">
+                        <h5 class="name">Ice-Cream:
+                            tasty: Green tea.
+                        </h5>
+                        <div class="menu-item-price">
+                            8.00€
+                        </div>
+                        <a class="btn add-item" href="#"> Add Item </a>
+                        </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="./IMG/madeleines.jpg" alt="menu item thumbnail" >
+                        <h5 class="name">madeleine:
+                            old popular baked items at cake shops in Japan.
+                        </h5>
+                        <div class="menu-item-price">
+                            11.00€
+                        </div>
+                        <a class="btn add-item" href="#"> Add Item </a>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="./IMG/dango.jpg" alt="menu item thumbnail" >
+                        <h5 class="name">Dango:
+                            Japanese rice dumplings.
+                        </h5>
+                        <div class="menu-item-price">
+                            15.00€
+                        </div>
+                        <a class="btn add-item" href="#"> Add Item </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row menu-content" id="drinks">
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="./IMG/greentea.jpg" alt="menu item thumbnail" >
+                        <h5 class="name">Green Tea:
+                            hot drink.
+                        </h5>
+                        <div class="menu-item-price">
+                            3.00€
+                        </div>
+                        <a class="btn add-item" href="#"> Add Item </a>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="./IMG/sake.jpg" alt="menu item thumbnail" >
+                        <h5 class="name">Sake:
+                            An Alcoholic drink.
+                        </h5>
+                        <div class="menu-item-price">
+                            8.00€
+                        </div>
+                        <a class="btn add-item" href="#"> Add Item </a>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="./IMG/asahi.jpg" alt="menu item thumbnail" >
+                        <h5 class="name">Asahi:
+                            Japanese Beer.
+                        </h5>
+                        <div class="menu-item-price">
+                           7.00€
+                        </div>
+                        <a class="btn add-item" href="#"> Add Item </a>
+                   </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="rest-client sec-pad" id="client">
+        <div class="container">
+            <h4> Clients </h4>
+            <div id="results">
+    
+                <!-- <div class="ratings" style="margin-left: 600px;">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+
+   
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script type="text/javascript" src="./JS/main.js"></script>			
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
